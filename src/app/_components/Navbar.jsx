@@ -21,7 +21,7 @@ const Navbar = () => {
                 href="#contact"
                 className="px-4 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
               >
-                Book me!
+                Contact me
               </Link>
             </div>
         </nav>

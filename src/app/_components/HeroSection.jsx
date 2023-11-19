@@ -24,7 +24,7 @@ const HeroSection = () => {
                 href="#contact"
                 className="px-7 py-3 text-white text-xl bg-indigo-600 rounded-md"
               >
-                Book me!
+                Contact me
               </Link>
             </div>
           </div>
