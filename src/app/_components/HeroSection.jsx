@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const HeroSection = ({ data }) => {
-  const { title, description, title, contact_me_btn, picture } = data;
+  const { title,  contact_me_btn, description, picture } = data;
 
   return (
       <>
@@ -17,7 +17,6 @@ const HeroSection = ({ data }) => {
             <p className="py-5 text-xl leading-normal lg:text-xl xl:text-2xl text-gray-300">
               {description}
             </p>
-
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <Link
                 href="#contact"
@@ -31,11 +30,12 @@ const HeroSection = ({ data }) => {
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <Image
             src={picture.filename}
-            width="529"
-            height="529"
+            width={529}
+            height={529}
             className={"object-cover rounded-full hidden lg:inline"}
             alt="Max Ch"
             loading="eager"
+            priority
           />
         </div>
       </Container>
