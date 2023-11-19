@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const Navbar = ({ data }) => {
-  const { title, cta_button_text } = data;
+  const { title, contact_me_btn } = data;
   return (
     <div
     className="w-full"
@@ -22,7 +22,7 @@ const Navbar = ({ data }) => {
                 href="#contact"
                 className="px-4 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
               >
-                {cta_button_text}
+                {contact_me_btn}
               </Link>
             </div>
         </nav>
