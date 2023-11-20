@@ -20,7 +20,7 @@ const Navbar = ({ data }) => {
               <Link href="/en">EN</Link>
               <Link
                 href="#contact"
-                className="px-4 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
+                className="px-4 py-2 text-white bg-orange-500 hover:bg-orange-700 duration-300 rounded-md md:ml-5"
               >
                 {contact_me_btn}
               </Link>
