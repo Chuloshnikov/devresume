@@ -20,7 +20,7 @@ const HeroSection = ({ data }) => {
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <Link
                 href="#contact"
-                className="px-7 py-3 text-white text-xl bg-indigo-600 rounded-md"
+                className="px-7 py-3 text-white text-xl bg-orange-500 hover:bg-orange-700 duration-300 rounded-md"
               >
                 {contact_me_btn}
               </Link>
