@@ -17,6 +17,7 @@ const Navbar = ({ data }) => {
 
             <div className="hidden mr-3 space-x-4 lg:flex nav__item">
               <Link href="/ua">UA</Link>
+              <Link href="/ua">PL</Link>
               <Link href="/en">EN</Link>
               <Link
                 href="#contact"
