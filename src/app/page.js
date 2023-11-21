@@ -11,10 +11,10 @@ const getLandingPageData = async () => {
   const version = process.env.SB_DATA_VERSION;
   const token = process.env.SB_TOKEN;
   const url = `https://api.storyblok.com/v2/cdn/stories/landing-page?version=${version}&token=${token}`;
-  let req = await fetch(url, {cache: 'no-store'});
+  let req = await fetch(url, {next: { revalidate: 10 }});
 
   const storyData = await req.json();
-  const { nav_section, hero_section, services_section, testimonials_section, contact_section } = storyData.story.content;
+  const { nav_section, hero_section, services_section, testimonials_section, contact_section, faq_section, footer_section } = storyData.story.content;
   console.log(storyData.story.content);
   return {
     nav_section: nav_section[0],
@@ -22,6 +22,8 @@ const getLandingPageData = async () => {
     services_section: services_section[0],
     testimonials_section: testimonials_section[0],
     contact_section: contact_section[0],
+    faq_section: faq_section[0],
+    footer_section: footer_section[0],
   }
 }
 
@@ -37,10 +39,11 @@ export default async function Home() {
       <TestimonialsSection data={storyData.testimonials_section}/>
       
       <ContactSection data={storyData.contact_section}/>
-      {/*
-      <FaqSection/>
-      <Footer/>
-    */}
+      
+      <FaqSection data={storyData.faq_section}/>
+      
+      <Footer data={storyData.footer_section}/>
+  
    </div>
   )
 }
