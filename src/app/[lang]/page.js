@@ -7,10 +7,10 @@ import ServicesSection from "./_components/ServicesSection";
 import TestimonialsSection from "./_components/TestimonialsSection";
 
 
-const getLandingPageData = async () => {
+const getLandingPageData = async (lang) => {
   const version = process.env.SB_DATA_VERSION;
   const token = process.env.SB_TOKEN;
-  const url = `https://api.storyblok.com/v2/cdn/stories/landing-page?version=${version}&token=${token}`;
+  const url = `https://api.storyblok.com/v2/cdn/stories/landing-page?version=${version}&token=${token}&language=${lang}`;
   let req = await fetch(url, {next: { revalidate: 10 }});
 
   const storyData = await req.json();
@@ -28,8 +28,8 @@ const getLandingPageData = async () => {
 }
 
 
-export default async function Home() {
-  const storyData = await getLandingPageData();
+export default async function Home({ params: {lang}}) {
+  const storyData = await getLandingPageData(lang);
   return (
    <div>
       <Navbar data={storyData.nav_section} />
