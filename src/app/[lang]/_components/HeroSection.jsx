@@ -32,7 +32,7 @@ const HeroSection = ({ data }) => {
             src={picture.filename}
             width={529}
             height={529}
-            className={"object-cover rounded-full hidden lg:inline"}
+            className={"object-cover rounded-full hidden lg:inline shadow-grey-500"}
             alt="Max Ch"
             loading="eager"
             priority
