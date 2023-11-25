@@ -9,7 +9,7 @@ const Navbar = ({ data }) => {
         <nav className="container relative flex items-center justify-between p-8 mx-auto xl:px-0">
           <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
               <Link href="/">
-                <span className="flex items-center space-x-2 text-xl mdl:text-2xl font-medium text-gray-100">
+                <span className="flex items-center space-x-2 text-lg mdl:text-2xl font-medium text-gray-100">
                   <span>{title}</span>
                 </span>
               </Link>
