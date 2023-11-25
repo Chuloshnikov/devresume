@@ -8,7 +8,7 @@ const HeroSection = ({ data }) => {
 
   return (
       <>
-      <Container className="flex flex-wrap pt-28 pb-18">
+      <Container className="flex flex-wrap-reverse lg:flex-nowrap gap-2 pt-28 pb-18">
         <div className="flex items-center w-full lg:w-1/2 lg:px-10">
           <div className="max-w-2xl mb-8 pr-3">
             <h1 className="text-4xl font-bold leading-snug tracking-tight lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight text-white">
@@ -27,15 +27,21 @@ const HeroSection = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
+        <div className="relative flex items-center justify-center w-full lg:w-1/2">
+          <div 
+          className='absolute -top-3 left-0 w-full h-[100px] bg-black rotate-[17deg]'
+          />
           <Image
             src={picture.filename}
             width={529}
             height={529}
-            className={"object-cover rounded-full hidden lg:inline shadow-grey-500"}
+            className={"object-cover rounded-full"}
             alt="Max Ch"
             loading="eager"
             priority
+          />
+           <div 
+          className='absolute -bottom-3 left-0 w-full h-[100px] bg-black rotate-[17deg]'
           />
         </div>
       </Container>
