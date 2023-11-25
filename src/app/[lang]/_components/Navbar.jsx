@@ -4,7 +4,7 @@ const Navbar = ({ data }) => {
   const { title, contact_me_btn } = data;
   return (
     <div
-    className="w-full fixed bg-black/80 backdrop-blur-lg"
+    className="w-full fixed bg-black/70 backdrop-blur-lg z-50"
     >
         <nav className="container relative flex items-center justify-between p-8 mx-auto xl:px-0">
           <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
