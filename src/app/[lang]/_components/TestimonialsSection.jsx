@@ -21,8 +21,6 @@ const TestimonialsSection = ({ data }) => {
           slidesPerView={1}
           pagination={{ clickable: true }}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
           >
           {testimonial_cards.map((testimonial, index) => (
             <SwiperSlide key={index}>

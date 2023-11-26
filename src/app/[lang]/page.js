@@ -7,6 +7,7 @@ import ServicesSection from "./_components/ServicesSection";
 import TestimonialsSection from "./_components/TestimonialsSection";
 
 
+
 const getLandingPageData = async (lang) => {
   const version = process.env.SB_DATA_VERSION;
   const token = process.env.SB_TOKEN;
