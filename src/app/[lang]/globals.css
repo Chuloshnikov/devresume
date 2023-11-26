@@ -29,3 +29,9 @@ body {
 .swiper-pagination-bullet-active {
   background-color: #F27725 !important;
 }
+
+@media screen and (max-width: 667px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
