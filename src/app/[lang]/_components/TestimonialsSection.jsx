@@ -13,7 +13,7 @@ const TestimonialsSection = ({ data }) => {
     <section className="mx-auto bg-zinc-950 pt-24 pb-32">
       <h2 className="text-4xl font-bold text-center mb-20">{title}</h2>
       <div
-      className="cantainer max-w-[1200px] mx-4 xl:mx-auto"
+      className="cantainer max-w-[1200px] max-h-[250px] mx-4 xl:mx-auto"
       >
         <Swiper
           modules={[Autoplay, Pagination ]}
