@@ -7,7 +7,11 @@ const Footer = ({ data }) => {
       >
         {title}
       </h3>
-      <span>{text}</span>
+      <span
+      className="text-sm px-8 lg:px-0 lg:text-base"
+      >
+        {text}
+      </span>
     </div>
   );
 };
