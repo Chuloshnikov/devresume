@@ -40,9 +40,9 @@ export default async function Home({ params: {lang}}) {
       <TestimonialsSection data={storyData.testimonials_section}/>
       
       <ContactSection data={storyData.contact_section}/>
-      {/*
-      <FaqSection data={storyData.faq_section}/>
       
+      <FaqSection data={storyData.faq_section}/>
+      {/*
       <Footer data={storyData.footer_section}/>
       */}
    </div>
