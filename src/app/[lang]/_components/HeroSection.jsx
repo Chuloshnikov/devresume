@@ -45,7 +45,7 @@ const HeroSection = ({ data }) => {
             src={picture.filename}
             width={529}
             height={529}
-            className={"object-cover rounded-full w-[89%] xl:w-[80%]"}
+            className={"object-cover rounded-full w-[89%] xl:w-[78%]"}
             alt="Max Ch"
             loading="eager"
             priority
