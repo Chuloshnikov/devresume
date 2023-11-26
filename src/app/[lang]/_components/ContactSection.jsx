@@ -5,6 +5,8 @@ import Container from "./Container";
 import { FaFacebookSquare, FaInstagram, FaTelegram, FaWhatsappSquare } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import emailjs from '@emailjs/browser';
+import Particles from 'react-particles'
+import { loadStarsPreset } from "tsparticles-preset-stars";
 
 
 const ContactSection = ({ data }) => {
@@ -28,6 +30,12 @@ const ContactSection = ({ data }) => {
 
   return (
     <Container className="flex w-full flex-col lg:flex-row my-16 items-center justify-center text-center">
+      <Particles id="tsparticles" options={{
+                preset: "stars",
+                fullScreen: {
+                    zIndex: -1
+                }
+            }} init={async (engine) => await loadStarsPreset(engine)}/>
       <div className="text-xl" id="contact">
         <h2 className="text-4xl font-bold text-center mb-8">{title}</h2>
         <div
