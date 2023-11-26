@@ -18,13 +18,13 @@ const FaqCard = ({ data }) => {
           id="panel1a-header"
         >
           <h3
-          className='text-xl'
+          className='text-base xl:text-xl'
           >
             {question}
           </h3>
         </AccordionSummary>
         <AccordionDetails>
-          <p className="text-lg leading-normal">{answer}</p>
+          <p className="text-sm xl:text-lg leading-normal">{answer}</p>
         </AccordionDetails>
       </Accordion>
     );
