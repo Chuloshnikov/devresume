@@ -33,7 +33,7 @@ export default async function Home({ params: {lang}}) {
   const storyData = await getLandingPageData(lang);
   return (
    <div>
-      <Navbar data={storyData.nav_section} />
+      <Navbar data={storyData.nav_section} lang={lang}/>
       <HeroSection data={storyData.hero_section}/>
       <ServicesSection data={storyData.services_section}/>
       <TestimonialsSection data={storyData.testimonials_section}/>
