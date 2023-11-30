@@ -16,9 +16,9 @@ const Navbar = ({ data, lang }) => {
             </div>
 
             <div className=" mr-3 space-x-4">
-              <Link className="hover:text-gray-300 duration-200" href="/uk">UA</Link>
-              <Link className="hover:text-gray-300 duration-200" href="/pl">PL</Link>
-              <Link className="hover:text-gray-300 duration-200" href="/en">EN</Link>
+              <Link className="hover:text-gray-300 duration-200" href="/uk/portfolio">UA</Link>
+              <Link className="hover:text-gray-300 duration-200" href="/pl/portfolio">PL</Link>
+              <Link className="hover:text-gray-300 duration-200" href="/en/portfolio">EN</Link>
               <Link
                 href="#contact"
                 className="hidden lg:inline px-4 py-2 text-white bg-orange-500 hover:bg-orange-700 duration-300 rounded-md md:ml-5"
