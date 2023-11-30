@@ -9,7 +9,7 @@ const PortfolioCard = ({ data, index }) => {
   return (
     <section 
     key={index}
-    className=" mx-auto xl:px-0 w-[80%] mb-2 text-center rounded-lg border shadow border-gray-600 xl:p-8 text-white"
+    className=" mx-auto xl:px-0 w-full mb-2 text-center rounded-lg border shadow border-gray-600 xl:p-8 text-white"
     >
         <div
         className='flex flex-col xl:flex-row p-5 justify-center'
