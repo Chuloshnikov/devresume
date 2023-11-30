@@ -1,5 +1,6 @@
 import ContactSection from "../_components/ContactSection";
 import Footer from "../_components/Footer";
+import PortfolioContainer from "../_components/PortfolioPage/PortfolioContainer";
 import PortfolioNavbar from "../_components/PortfolioPage/PortfolioNavbar";
 
 
@@ -11,7 +12,7 @@ const getLandingPageData = async (lang) => {
     let req = await fetch(url, {next: { revalidate: 10 }});
   
     const storyData = await req.json();
-    const { nav_section, hero_section, services_section, testimonials_section, contact_section, faq_section, footer_section } = storyData.story.content;
+    const { nav_section, hero_section, services_section, testimonials_section, contact_section, faq_section, footer_section, portfolio_section } = storyData.story.content;
     console.log(storyData.story.content);
     return {
       nav_section: nav_section[0],
@@ -21,6 +22,7 @@ const getLandingPageData = async (lang) => {
       contact_section: contact_section[0],
       faq_section: faq_section[0],
       footer_section: footer_section[0],
+      portfolio_section: portfolio_section[0],
     }
   }
 
@@ -29,6 +31,7 @@ export default async function Portfolio({ params: {lang}}) {
     return (
         <>
         <PortfolioNavbar data={storyData.nav_section} lang={lang}/>
+            <PortfolioContainer data={storyData.portfolio_section}/>
             <ContactSection data={storyData.contact_section}/>
         <Footer data={storyData.footer_section}/>
         </>

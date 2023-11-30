@@ -9,7 +9,7 @@ import { TbBrandPrisma } from "react-icons/tb";
 
 
 const HeroSection = ({ data }) => {
-  const { title,  contact_me_btn, description, picture } = data;
+  const { title,  contact_me_btn, description, picture, portfolio_btn } = data;
 
   return (
       <>
@@ -28,6 +28,12 @@ const HeroSection = ({ data }) => {
                 className="px-7 py-3 text-white text-base xl:text-xl bg-orange-500 hover:bg-orange-700 duration-300 rounded-md"
               >
                 {contact_me_btn}
+              </Link>
+              <Link
+              href={`/portfolio`}
+              className="px-7 py-3 text-white text-base xl:text-xl bg-orange-500 hover:bg-orange-700 duration-300 rounded-md"
+              >
+                {portfolio_btn}
               </Link>
             </div>
           </div>
