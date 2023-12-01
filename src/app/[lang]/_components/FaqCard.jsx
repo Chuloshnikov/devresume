@@ -9,7 +9,7 @@ const FaqCard = ({ data }) => {
     const { question, answer } = data;
     return (
       <Accordion
-      className='bg-[#262626] text-white'
+      sx={{backgroundColor: '#262626', color: "#ffffff"}}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon className='text-white'/>}
