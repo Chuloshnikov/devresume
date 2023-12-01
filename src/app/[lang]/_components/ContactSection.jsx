@@ -47,7 +47,7 @@ const ContactSection = ({ data }) => {
           <Link href={"https://www.instagram.com/maxmaxich/"}>
             <FaInstagram className="w-10 h-10 text-pink-500"/>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/https://t.me/+380730452115"}>
             <FaTelegram className="w-10 h-10 text-blue-500"/>
           </Link>
           <Link href={"https://api.whatsapp.com/send?phone+380955255166"}>
